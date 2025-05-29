@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Create the OpenAI client
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 # Streamlit UI
 st.title("🩺 Clinical Note Generator")
